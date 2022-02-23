@@ -25,7 +25,7 @@ describe("AuthenticateUser", () => {
 
     const authenticated = await authenticateUserUseCase.execute({
       email: user.email,
-      password: user.password,
+      password: "password",
     });
 
     expect(authenticated).toHaveProperty("token");
